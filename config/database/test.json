@@ -1,5 +1,5 @@
 {
-  "user": "developer",
+  "user": "postgres",
   "password": "dokonjou",
   "host": "localhost",
   "port": 5432,
