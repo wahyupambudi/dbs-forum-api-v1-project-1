@@ -18,8 +18,8 @@
             key: ${{ secrets.SSH_KEY }}
             port: ${{ secrets.SSH_PORT }}
             script: |
-              cd ~/auth-api
+              cd ~/dbs-forum-api-v1-project-1
               git pull origin master
               npm install
               npm run migrate up
-              pm2 restart auth-api
+              pm2 restart dbs-forum-api-v1-project-1
