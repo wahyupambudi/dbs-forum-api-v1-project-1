@@ -18,6 +18,8 @@
             key: ${{ secrets.SSH_KEY }}
             port: ${{ secrets.SSH_PORT }}
             script: |
+              export NVM_DIR=~/.nvm
+              source ~/.nvm/nvm.sh
               cd ~/dbs-forum-api-v1-project-1
               git pull origin main
               npm install
